@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="background-dark">
+    <div class="menu">
+      <img src="img/menu.png" alt="Menu" />
+      <div class="menu-content">
+        <a href="#">Bewerte uns</a>
+        <a href="#">Über mich</a>
+        <a href="#">Mehr</a>
+      </div>
+    </div>
+
+    <div class="center margin-top">
+      <img src="img/egg.png" alt="Egg" style="height: 35%; width: 35%" />
+    </div>
+
+    <div class="center margin-top timer" id="timer">00 : 00</div>
+
+    <div class="input-container">
+      <input type="number" id="minutes" placeholder="Min" min="0" max="59" />
+      <input type="number" id="seconds" placeholder="Sec" min="0" max="59" />
+    </div>
+
+    <div class="center margin-top timer">
+      <img onclick="startTimer()" src="img/button.png" alt="Start Button" />
+    </div>
+  </body>
+</html>
